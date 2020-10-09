@@ -6,5 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Article extends Model
 {
-    //
+    //protected $fillable = ['title','excerpt','body']; //User::create(request->all())
+
+    protected $guarded = [];
 }
